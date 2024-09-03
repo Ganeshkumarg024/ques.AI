@@ -1,0 +1,188 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Flexbox Layout */
+.home-wrap {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+  
+.home-left-container {
+    flex: 2 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    text-align: center;
+    gap: 3rem;
+    background: 
+        url('../Assets/Images/ringles.svg') center center / cover no-repeat, /* Top layer (SVG image) */
+        linear-gradient(231.62deg, #ae52ff -26.53%, #330b56 117.16%); /* Bottom layer (Gradient) */
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-size: 2rem;
+}
+.logo-container img{
+    width:40px;
+}
+.logo-txt{
+    font-size:2rem;
+}
+.left-container-end ,.left-container-mid{
+    display: flex;
+}
+  
+.home-left-container h1 {
+    font-size: 2.5rem;
+    width:50%;
+}
+
+  
+.home-right-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.25rem;
+    background-color: #f7f7f7;
+    gap: 2rem; /* Space between form sections */
+}
+  
+.ques-logo-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Space between logo and text */
+}
+  
+.ques-logo img {
+    width: 100px;
+    height: auto;
+}
+  
+.ques-logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+  
+.ques-logo-text .text-1 {
+    font-size: 1.2rem;
+    color: #7E22CE;
+}
+  
+.ques-logo-text .text-2 {
+    font-size: 2rem;
+    color: #7E22CE;
+    font-weight: bold;
+}
+  
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem; /* Space between form fields */
+}
+  
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+  
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+  
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+  
+.remember-me-check {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+  
+.remember-me label {
+    font-size: 0.9rem;
+}
+  
+.remember-me .forgot-password {
+    font-size: 0.9rem;
+    color: #085fce;
+    text-decoration: none;
+}
+  
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+  
+.login-button:hover {
+    background-color: #5a009d;
+}
+  
+.separator {
+    text-align: center;
+    font-size: 1rem;
+    color: #aaa;
+}
+  
+.google-button {
+    display: flex;
+    gap:20px;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem;
+    background: #FFFFFF;
+    border: 1.28px solid #DBDBDB;
+    color: #3C3C3C;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.google-button img{
+    width:30px;
+    height:30px;
+}
+  
+
+  
+.sign-up {
+    text-align: center;
+    font-size: 0.9rem;
+    gap: 1rem; /* Space between the sign-up text and elements above */
+}
+  
+.sign-up a {
+    color: #085fce;
+    text-decoration: none;
+}

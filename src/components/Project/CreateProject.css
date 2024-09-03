@@ -1,0 +1,241 @@
+.create-project-container {
+    padding: 2rem 3rem;
+    height: 100vh;
+  }
+  
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    width: 188px;
+    height: 38px;
+  }
+  
+  .settings-icons {
+    display: flex;
+    gap: 4px;
+  }
+  
+  .settings-icons img {
+    width: 38px;
+  }
+  
+  .create-new-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 638px;
+    gap: 8px;
+    margin-left: 25%;
+  }
+  
+  .title p {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 53px;
+    color: #7e22ce;
+  }
+  
+  .create-project-btn {
+    display: flex;
+  }
+  
+  .create-project-btn button {
+    background: #211935;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    border-radius: 6px;
+    color: white;
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .create-project-btn button img {
+    width: 25px;
+  }
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 28px;
+    border-radius: 11px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .modal-content label {
+    display: block;
+    margin-bottom: 7px;
+    color: #666;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  .error-message {
+    color: #ff4d4f;
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+  }
+  
+  .cancel-btn, .create-btn {
+    padding: 11px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .cancel-btn {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  .create-btn {
+    background-color: #8a2be2;
+    color: white;
+  }
+  
+
+  
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .project-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .project-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #ffa500;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  
+  .project-details h3 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .project-details p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .last-edited {
+    font-size: 12px !important;
+    color: #999 !important;
+  }
+  
+  .create-icons, .create-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .create-text p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+
+/* .create-project-container {
+    padding: 3rem 4rem;
+    height: 100vh;
+  }
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo img {
+    width: 250px;
+    height: 50px;
+  }
+  .settings-icons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .settings-icons img {
+    width: 50px;
+  }
+  .create-new-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 850px;
+    gap: 10px;
+  }
+  .title p {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 70.62px;
+    color: #7e22ce;
+  }
+  .create-project-btn {
+    display: flex;
+  }
+  .create-project-btn button {
+    background: #211935;
+    display: flex;
+    gap: 5px;
+    align-content: center;
+    justify-content: center;
+    height:50px;
+    border-radius:7.5px;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+   */
