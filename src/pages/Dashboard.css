@@ -1,21 +1,21 @@
 .layout {
-    display: flex;
-    height: 100%;
-  }
-  
-  .sidebar {
-   flex: 1;
-    background-color: #f4f4f4;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-  }
-  
-  .main-content {
-    flex: 4;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 4;
+  padding:3rem;
+  display: flex;
+  flex-direction: column;
+}
