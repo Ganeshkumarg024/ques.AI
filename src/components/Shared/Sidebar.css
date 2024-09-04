@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    color: #6c63ff;
+    margin-bottom: 40px;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between nav items */
+    flex-grow: 1;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .nav-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .nav-item.active {
+    background-color: #F3E8FF88;
+    color: #7E22CE; /* Text color when active */
+  }
+  
+  .sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between help link and user info */
+  }
+
+  
+  .help-link {
+    text-decoration: none;
+    color: #646464;
+    font-size: 1.1em;
+    display: flex;
+    gap:8px;
+    align-items: center;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  .sidebar-footer img{
+    width:30px;
+  }
+  .border-grey{
+    border: 1.33px solid #CCCCCC
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between user image and details */
+  }
+  
+  .user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+  
+  .user-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    color: #555;
+  }
+  .username{
+    color: #3C3C3C;
+    font-weight: bold;
+
+  }
+  
