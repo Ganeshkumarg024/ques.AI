@@ -64,7 +64,7 @@ const Sidebar = () => {
       </nav>
       
       <div className="sidebar-footer">
-        <a href="#" className="help-link">
+        <a href="/settings" className="help-link">
         <img src={Settingicon} alt="Settings Icon" />
           <p>Help</p>
         </a>

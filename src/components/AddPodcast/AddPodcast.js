@@ -3,15 +3,18 @@ import Rss from "../../Assets/Images/Rssfeed.svg";
 import youtube from "../../Assets/Images/youtube-icon.svg";
 import upload from "../../Assets/Images/upload-icons.svg";
 import uploadfile from "../../Assets/Images/upload-file.svg";
+import share from "../../Assets/Images/share-icons.svg";
+
 import YouTubeModal from './YouTubeModal';
 import './AddPodcast.css';
 
 const AddPodcast = () => {
-    
     const [showModal, setShowModal] = useState(false);
-    const [files, setFiles] = useState([]); // State to track uploaded files
+    const [files, setFiles] = useState([{ id: 1, name: 'THE SIDEPOD S2 EPISODE 15', date: '25 Oct 23 | 09:04', status: 'In Progress' },
+        { id: 2, name: 'THE SIDEPOD S2 EPISODE 17', date: '27 Oct 23 | 11:08', status: 'Done' },
+        { id: 3, name: 'THE SIDEPOD S2 EPISODE 20', date: '31 Oct 23 | 20:28', status: 'Done' },
+]);  // Track the uploaded files
 
-    
     const handleOpenModal = () => {
         setShowModal(true);
     }
@@ -59,6 +62,7 @@ const AddPodcast = () => {
                 </div>
             </div>
             
+            {/* Conditional rendering based on whether files exist */}
             {files.length === 0 ? (
                 <div className="file-upload">
                     <div className='upload-icon'>
@@ -71,6 +75,11 @@ const AddPodcast = () => {
             ) : (
                 <div className="files-list">
                     <p className="info-text">1 file(s) are in progress, you will get an email on your@example.com once the transcription is complete.</p>
+                    <div className='table-wrap'>
+                        <div className='t-heade-name'>
+                            <h2>Your Files</h2>
+                        </div>
+
                     <table className="files-table">
                         <thead>
                             <tr>
@@ -86,16 +95,18 @@ const AddPodcast = () => {
                                 <tr key={index}>
                                     <td>{index + 1}</td>
                                     <td>{file.name}</td>
-                                    <td>{file.uploadDate}</td>
+                                    <td>{file.date}</td>
                                     <td><span className={`status ${file.status.toLowerCase()}`}>{file.status}</span></td>
-                                    <td>
+                                    <td className='btn'>
                                         <button className="view-btn">View</button>
                                         <button className="delete-btn">Delete</button>
+                                        <img src={share} alt=''/>
                                     </td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
+                    </div>
                 </div>
             )}
 

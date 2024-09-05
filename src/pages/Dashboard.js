@@ -7,6 +7,7 @@ import Upgrade from '../components/Shared/Upgrade';
 import Sidebar from '../components/Shared/Sidebar';
 import Navbar from '../components/Shared/Navbar';
 import "./Dashboard.css"
+import AccountSettings from '../components/Settings/AccountSettings';
 
 const Dashboard = () => {
   return (
@@ -23,6 +24,7 @@ const Dashboard = () => {
             <Route path="/podcast-widget" element={<PodcastWidget/>} />
             <Route path="/upgrade" element={<Upgrade/>} />
             <Route path="*" element={<Navigate to="/add-podcast" />} />
+            <Route path="/settings" element={<AccountSettings/>} />
           </Routes>
         </div>
       </div>
