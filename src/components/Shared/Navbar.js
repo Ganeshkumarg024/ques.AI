@@ -4,18 +4,18 @@ import notification from "../../Assets/Images/notification-icons.svg";
 import logout from "../../Assets/Images/logout-icon.svg";
 import home from "../../Assets/Images/home.svg";
 
-const Navbar = () => {
+const Navbar = ({ projectName, sidebarOption }) => {
   return (
     <div className="top-nav">
       <div className="navbar-left">
-        <img src={home} alt="" />
+        <img src={home} alt="Home" />
         <a href="#" className="breadcrumb">
-          Home Page / Sample Project / Add your podcast
+          Home Page / {projectName} / {sidebarOption}
         </a>
       </div>
       <div className="actions">
-        <img src={notification} alt="" />
-        <img src={logout} alt="" />
+        <img src={notification} alt="Notification" />
+        <img src={logout} alt="Logout" />
       </div>
     </div>
   );

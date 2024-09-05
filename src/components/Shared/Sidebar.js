@@ -7,7 +7,7 @@ import createreprse from "../../Assets/Images/create-reporse.svg";
 import PodcastWidget from "../../Assets/Images/podcast-widget.svg";
 import upgrade from "../../Assets/Images/upgrade-icon.svg";
 import Settingicon from "../../Assets/Images/Setting-icon.svg";
-import userprofile from "../../Assets/Images/user-profile.svg"
+import userprofile from "../../Assets/Images/user-profile.svg";
 
 const Sidebar = () => {
   const [activeLink, setActiveLink] = useState("/add-podcast");
@@ -53,30 +53,58 @@ const Sidebar = () => {
         </Link>
         <Link
           to="/upgrade"
-          className={`nav-item ${activeLink === "/upgrade" ? "active" : ""} upgrade-container`}
+          className={`nav-item ${
+            activeLink === "/upgrade" ? "active" : ""
+          } upgrade-container`}
         >
           <img src={upgrade} alt="Upgrade" />
           <p>Upgrade</p>
         </Link>
-        <svg width="240" height="2" viewBox="0 0 347 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <line y1="0.999959" x2="346.667" y2="0.999959" stroke="#CCCCCC" strokeWidth="1.33333"/>
-  </svg>
+        <svg
+          width="240"
+          height="2"
+          viewBox="0 0 347 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            y1="0.999959"
+            x2="346.667"
+            y2="0.999959"
+            stroke="#CCCCCC"
+            strokeWidth="1.33333"
+          />
+        </svg>
       </nav>
-      
+
       <div className="sidebar-footer">
         <a href="/settings" className="help-link">
-        <img src={Settingicon} alt="Settings Icon" />
+          <img src={Settingicon} alt="Settings Icon" />
           <p>Help</p>
         </a>
-        <svg width="240" height="2" viewBox="0 0 347 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <line y1="0.999959" x2="346.667" y2="0.999959" stroke="#CCCCCC" strokeWidth="1.33333"/>
-  </svg>
+        <svg
+          width="240"
+          height="2"
+          viewBox="0 0 347 2"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            y1="0.999959"
+            x2="346.667"
+            y2="0.999959"
+            stroke="#CCCCCC"
+            strokeWidth="1.33333"
+          />
+        </svg>
         <div className="user-info">
-          <img src={userprofile} alt="User" className="user-image" />
-          <div className="user-details">
-            <p className="username">Username</p>
-            <span>username@gmail.com</span>
-          </div>
+          <a href="/settings" className="help-link">
+            <img src={userprofile} alt="User" className="user-image" />
+            <div className="user-details">
+              <p className="username">Username</p>
+              <span>username@gmail.com</span>
+            </div>
+          </a>
         </div>
       </div>
     </div>
